@@ -1,4 +1,4 @@
-const player = {
+let player = {
   games: new Decimal(1),
   yhvr: {
     amount: 0,
