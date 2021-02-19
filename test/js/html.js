@@ -1,4 +1,4 @@
-const doc = document
+const doc = document.div
 const div = document.createElement('html')
 div.innerHTML = `<head>
 <meta charset="UTF-8">
