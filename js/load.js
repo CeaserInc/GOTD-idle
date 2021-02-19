@@ -11,10 +11,10 @@ if (save != null && save.version === player.version) {
   player.uploaders.yhvr.cost = new Decimal(player.uploaders.yhvr.cost)
   player.uploaders.yhvr.production = new Decimal(player.uploaders.yhvr.production)
   player.motivations.beg.cost=new Decimal(player.motivations.beg.cost)
-  player.motivations.beg.multiplyer=new Decimal(player.motivations.beg.multiplyer)
+  player.motivations.beg.multiplier=new Decimal(player.motivations.beg.multiplier)
   document.getElementById('yhvrC').textContent = player.uploaders.yhvr.cost.toFixed(2)
   document.getElementById('yhvr').textContent = player.uploaders.yhvr.amount
-  document.getElementById('yhvr').textContent = player.uploaders.yhvr.amount * player.uploaders.yhvr.multiplyers
+  document.getElementById('yhvr').textContent = player.uploaders.yhvr.amount * player.uploaders.yhvr.multiplier
 } else if (save.version !== player.version) {
   alert('Updating to new Version (sorry for hard reset)')
   hard_reset()

@@ -46,8 +46,8 @@ function buyM (thing) {
     if (player.games.gte(player.motivations[thing.name].cost)) {
       player.games = player.games.minus(player.motivations[thing.name].cost)
       player.motivations[thing.name].amount += 1
-      player.motivations[thing.name].multiplier = player.motivations[thing.name].multiplyer.mul(2)
-      player.uploaders[thing.effect].multiplier = player.motivations[thing.name].multiplyer
+      player.motivations[thing.name].multiplier = player.motivations[thing.name].multiplier.mul(2)
+      player.uploaders[thing.effect].multiplier = player.motivations[thing.name].multiplier
       player.motivations[thing.name].cost = player.motivations[thing.name].cost.mul(player.motivations[thing.name].scailing)
       document.getElementById(thing.ids.amount).textContent = player.motivations[thing.name].amount
       document.getElementById(thing.ids.multilplier).textContent = player.motivations[thing.name].multilplier
