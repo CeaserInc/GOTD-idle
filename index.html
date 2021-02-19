@@ -17,12 +17,25 @@
     </div>
     <div id=tabs>
         <div id='main' class="tab">
-            <button style="overflow: hidden; width: 150px; float: left;" onclick="buy('yhvr')">
-                <h4>Yhvr</h4>
-                <p>Very slow at finding games</p>
-                <p>Cost: <span id='yhvrC'>1</span> game(s)</p>
-                <p>You have <span id='yhvr'>0</span> Yhvr(s) producing <span id='yhvrP'>0</span> games per second</p>
-            </button>
+            <div id='nav'>
+                <button onclick="showSubTab('Uploaders')">Uploaders</button><button onclick="showSubTab('Motivation')">Motivation</button>
+            </div>
+            <div id='Uploaders' class='sub-tab'>
+                <button style="overflow: hidden; width: 150px; float: left;" onclick="buyU({name: 'yhvr', ids:{cost:'yhvrC', amount:'yhvr', production:'yhvrP'}},)">
+                    <h4>Yhvr</h4>
+                    <p>Very slow at finding games</p>
+                    <p>Cost: <span id='yhvrC'>1</span> game(s)</p>
+                    <p>You have <span id='yhvr'>0</span> Yhvr(s) producing <span id='yhvrP'>0</span> games per second</p>
+                </button>
+            </div>
+            <div id='Motivation' class='sub-tab' style="display: none;">
+                <button style="overflow: hidden; width: 150px; float: left;" onclick="buyM({name: 'beg', effect:'yhvr', ids:{cost:'begC', amount:'beg', multilplyer:'begP'}},)">
+                    <h4>Beg to Yhvr</h4>
+                    <p>Ping Yhvr to do GOTD</p>
+                    <p>Cost: <span id='begC'>100</span> game(s)</p>
+                    <p>You have <span id='beg'>0</span> people begging which is multiplying Yhvr by <span id='begP'>0</span></p>
+                </button>
+            </div>
         </div>
         <div id='other' class="tab" style="display: none;">
             other
