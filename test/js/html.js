@@ -23,4 +23,4 @@ div.innerHTML=`<div id='top'>
 </div>
 </div>`
 body.append(div)
-css.innerHTML = "<link rel='stylesheet' href='style.css'>"
+css.innerHTML = "<link rel='stylesheet' href='./style.css'>"
