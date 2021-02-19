@@ -13,5 +13,6 @@ if (save != null && save.version === player.version) {
   document.getElementById('yhvr').textContent = player.yhvr.amount
   document.getElementById('yhvr').textContent = player.yhvr.amount / 100
 } else if (save.version !== player.version) {
+  alert('Updating to new Version (sorry for hard reset)')
   hard_reset()
 }
