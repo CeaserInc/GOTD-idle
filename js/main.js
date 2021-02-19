@@ -21,7 +21,7 @@ function buy (thing) {
       player.yhvr.cost = player.yhvr.cost.mul(1.1)
       document.getElementById('yhvr').textContent = player.yhvr.amount
       document.getElementById('yhvrP').textContent = player.yhvr.amount / 100
-      document.getElementById('yhvrC').textContent = player.yhvr.cost
+      document.getElementById('yhvrC').textContent = player.yhvr.cost.toFixed(2)
     }
   } else {
     alert("this doesn't exist")
