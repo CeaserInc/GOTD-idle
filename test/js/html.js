@@ -1,5 +1,7 @@
-const doc = document.div
-const div = document.createElement('span')
+const body = document;
+const div = document.createElement('div')
+const head = document.head
+const css = document.createElement('link')
 div.innerHTML = `<head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,4 +33,5 @@ div.innerHTML = `<head>
 </div>
 </div>
 </body>`
-doc.append(div)
+body.append(div)
+css.innerHTML = "<link rel='stylesheet' href='./style.css'>"
