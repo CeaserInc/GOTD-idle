@@ -14,7 +14,7 @@ function showTab (tabName) {
 }
 function buy (thing) {
   if (player[thing] !== null) {
-    if (player.games.gte(1)) {
+    if (player.games.gte(player[thing].cost)) {
       player.games = player.games.minus(1)
       player[thing].amount += 1
       player.gps = player.gps.add(0.01)
