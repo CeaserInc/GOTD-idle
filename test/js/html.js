@@ -1,5 +1,7 @@
 const body = document.body;
-const div = document.createElement('div');
+const div = document.createElement('div')
+const head = document.head
+const css = document.createElement('link')
 div.innerHTML=`<div id='top'>
 <p style="display: inline-block;">You have </p><span id='games'> 1 </span><p  style="display: inline-block;"> game(s) of the day</p><br>
 <span style="display: inline-block; font-size: small;">You are getting <span id='gps'> 0 </span>game(s) per second</span>
@@ -21,3 +23,4 @@ div.innerHTML=`<div id='top'>
 </div>
 </div>`
 body.append(div)
+css.innerHTML = "<link rel='stylesheet' href='style.css'>"
