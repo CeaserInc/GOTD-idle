@@ -46,13 +46,13 @@ function buyM (thing) {
     if (player.games.gte(player.motivations[thing.name].cost)) {
       player.games = player.games.minus(player.motivations[thing.name].cost)
       player.motivations[thing.name].amount += 1
-      player.motivations[thing.name].multiplyer = player.motivations[thing.name].multiplyer.mul(2)
-      player.uploaders[thing.effect].multiplyer = player.motivations[thing.name].multiplyer
+      player.motivations[thing.name].multiplier = player.motivations[thing.name].multiplyer.mul(2)
+      player.uploaders[thing.effect].multiplier = player.motivations[thing.name].multiplyer
       player.motivations[thing.name].cost = player.motivations[thing.name].cost.mul(player.motivations[thing.name].scailing)
       document.getElementById(thing.ids.amount).textContent = player.motivations[thing.name].amount
-      document.getElementById(thing.ids.multilplyer).textContent = player.motivations[thing.name].multilplyer
+      document.getElementById(thing.ids.multilplier).textContent = player.motivations[thing.name].multilplier
       document.getElementById(thing.ids.cost).textContent = player.motivations[thing.name].cost.toFixed(2)
-      player.gps = player.gps.add(player.uploaders[thing.effect].production.mul(player.uploaders[thing.effect].multiplyer))
+      player.gps = player.gps.add(player.uploaders[thing.effect].production.mul(player.uploaders[thing.effect].multiplier))
     }
   } else {
     alert("this doesn't exist")
