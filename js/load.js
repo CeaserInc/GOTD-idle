@@ -6,7 +6,7 @@ function hard_reset () {
 let save = JSON.parse(localStorage.getItem('GOTDSave'))
 if (save != null && save.version === player.version) {
   player = save
-  document.getElementById('yhvrC').textContent = (player.yhvr.cost).toFixed(2)
+  document.getElementById('yhvrC').textContent = player.yhvr.cost.toFixed(2)
   document.getElementById('yhvr').textContent = player.yhvr.amount
   document.getElementById('yhvr').textContent = player.yhvr.amount / 100
 } else if (save.version !== player.version) {
