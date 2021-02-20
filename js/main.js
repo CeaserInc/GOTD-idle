@@ -50,7 +50,7 @@ function buyM (thing) {
       player.uploaders[thing.effect].multiplier = player.motivations[thing.name].multiplier
       player.motivations[thing.name].cost = player.motivations[thing.name].cost.mul(player.motivations[thing.name].scailing)
       document.getElementById(thing.ids.amount).textContent = player.motivations[thing.name].amount
-      document.getElementById(thing.ids.multilplier).textContent = player.motivations[thing.name].multilplier
+      document.getElementById(thing.ids.multiplier).textContent = player.motivations[thing.name].multiplier
       document.getElementById(thing.ids.cost).textContent = player.motivations[thing.name].cost.toFixed(2)
       player.gps = player.gps.add(player.uploaders[thing.effect].production.mul(player.uploaders[thing.effect].multiplier))
     }
