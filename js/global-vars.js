@@ -9,6 +9,13 @@ let player = {
       production: new Decimal(0.01),
       scailing: new Decimal(1.1),
       multiplier: new Decimal(1)
+    },
+    fishydids:{
+      amount: 0,
+      cost: new Decimal(500),
+      production: new Decimal(1),
+      scailing: new Decimal(1.2),
+      multiplier: new Decimal(1)
     }
   },
   motivations: {
